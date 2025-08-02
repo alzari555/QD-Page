@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QD Creative Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            animation: {
+              'pulse-slow': 'pulse-slow 5s ease-in-out infinite',
+            },
+            keyframes: {
+              'pulse-slow': {
+                '0%, 100%': {
+                  opacity: '0.9',
+                  transform: 'scale(1)',
+                },
+                '50%': {
+                  opacity: '1',
+                  transform: 'scale(1.02)',
+                },
+              },
+            },
+          },
+        },
+      }
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .gradient-text {
+          @apply bg-clip-text text-transparent bg-gradient-to-r from-[#993399] to-[#3645a9];
+        }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.535.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "react": "https://esm.sh/react@^19.1.1",
+    "react/": "https://esm.sh/react@^19.1.1/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
