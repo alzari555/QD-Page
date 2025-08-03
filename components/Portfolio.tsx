@@ -27,9 +27,9 @@ const Portfolio: React.FC = () => {
     <section id="portfolio" className="py-20 sm:py-32 bg-[#212121]">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-black text-white">Nuestro Patio de Recreo Creativo</h2>
+          <h2 className="text-4xl md:text-5xl font-black text-white">Nuestros Proyectos Destacados</h2>
           <p className="mt-4 text-lg max-w-3xl mx-auto text-gray-400">
-            Hemos ayudado a empresas de todos los tamaños a definir su imagen. Aquí tienes un vistazo de lo que podemos hacer.
+            Nos apasiona transformar ideas en realidad. Echa un vistazo a algunos de nuestros trabajos más recientes y descubre cómo hemos ayudado a otras marcas a brillar.
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
