@@ -3,17 +3,21 @@ import React from 'react';
 import type { Project } from '../types';
 
 const projects: Project[] = [
-  { id: 1, title: 'Sueños Cibernéticos', category: 'Diseño de Camisetas', imageUrl: 'https://imgur.com/a/hfm53yq' },
-  { id: 2, title: 'Suela Futura', category: 'Diseño de Producto', imageUrl: 'https://picsum.photos/seed/project2/800/600' },
-  { id: 3, title: 'Brandverso', category: 'Redes Sociales', imageUrl: 'https://picsum.photos/seed/project3/800/600' },
-  { id: 4, title: 'UI Orbital', category: 'Diseño UI/UX', imageUrl: 'https://picsum.photos/seed/project4/800/600' },
-  { id: 5, title: 'Patineta de Neón', category: 'Modelado 3D', imageUrl: 'https://picsum.photos/seed/project5/800/600' },
-  { id: 6, title: 'Identidad Corporativa', category: 'Branding', imageUrl: 'https://picsum.photos/seed/project6/800/600' },
+  { id: 1, title: 'Sueños Cibernéticos', category: 'Diseño de Camisetas', videoId: '1101316855' },
+  { id: 2, title: 'Suela Futura', category: 'Diseño de Producto', videoId: '76979871' },
+  { id: 3, title: 'Brandverso', category: 'Redes Sociales', videoId: '76979871' },
+  { id: 4, title: 'UI Orbital', category: 'Diseño UI/UX', videoId: '76979871' },
+  { id: 5, title: 'Patineta de Neón', category: 'Modelado 3D', videoId: '76979871' },
+  { id: 6, title: 'Identidad Corporativa', category: 'Branding', videoId: '76979871' },
 ];
 
 const PortfolioCard: React.FC<{ project: Project }> = ({ project }) => (
-  <div className="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
-    <img src={project.imageUrl} alt={project.title} className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
+  <div className="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer aspect-[4/3]">
+    <iframe 
+      src={`https://player.vimeo.com/video/${project.videoId}?background=1&autoplay=1&loop=1&muted=1&byline=0&title=0`}
+      className="absolute top-1/2 left-1/2 w-[150%] h-[150%] -translate-x-1/2 -translate-y-1/2 transform group-hover:scale-110 transition-transform duration-500"
+      allow="autoplay; fullscreen; picture-in-picture"
+    ></iframe>
     <div className="absolute inset-0 bg-black/40 group-hover:bg-gradient-to-t from-[#1d1d1b] via-transparent to-transparent transition-all duration-300"></div>
     <div className="absolute bottom-0 left-0 p-6 w-full transform translate-y-1/2 group-hover:translate-y-0 transition-transform duration-500 ease-out">
       <h3 className="text-2xl font-bold text-white">{project.title}</h3>
