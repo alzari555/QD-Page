@@ -14,7 +14,7 @@ const About: React.FC = () => {
     <section id="about" className="py-20 sm:py-32 bg-[#1d1d1b]">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-black gradient-text">Del Concepto a la Realidad</h2>
+          <h2 className="text-4xl md:text-5xl font-black gradient-text pb-4">Del Concepto a la Realidad</h2>
           <p className="mt-4 text-lg max-w-3xl mx-auto text-gray-300">
             Somos un colectivo de diseñadores, artistas y estrategas con una misión: construir marcas que dejan huella. Combinamos una estética cuidada con un pensamiento estratégico para crear diseños que no solo impresionan, sino que también generan resultados.
           </p>

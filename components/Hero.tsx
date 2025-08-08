@@ -9,7 +9,7 @@ const Hero: React.FC = () => {
        <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-bl from-transparent to-[#3645a9]/10 transform skew-x-12 -translate-x-1/4"></div>
       <div className="relative z-10 flex flex-col items-center px-6">
         <Logo className="w-64 md:w-96 text-[#993399] animate-pulse-slow" />
-        <h2 className="text-2xl md:text-4xl font-bold tracking-[0.2em] text-white uppercase mt-4">
+        <h2 className="text-2xl md:text-4xl font-bold tracking-[0.2em] text-white uppercase mt-4 pb-2">
           Estudio Creativo
         </h2>
         <p className="mt-6 text-lg md:text-xl max-w-2xl text-gray-300">

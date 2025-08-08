@@ -7,7 +7,7 @@ const Contact: React.FC = () => {
     <section id="contact" className="py-20 sm:py-32 bg-[#212121]">
       <div className="container mx-auto px-6 text-center">
         <Logo className="w-24 text-[#993399] mx-auto mb-4" />
-        <h2 className="text-4xl md:text-6xl font-black text-white leading-tight">
+        <h2 className="text-4xl md:text-6xl font-black text-white leading-tight pb-4">
           ¿Hablamos de tu proyecto?
         </h2>
         <p className="mt-6 text-lg max-w-2xl mx-auto text-gray-400">
