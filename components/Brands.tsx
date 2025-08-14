@@ -14,7 +14,7 @@ interface Brand {
 const brandsData: Brand[] = [
   { id: 1, name: '80C', logoUrl: logo80C },
   { id: 2, name: 'Rondot', logoUrl: logoRondot },
-  { id: 3, name: 'test', logoUrl: testLogo }, 
+  //{ id: 3, name: 'test', logoUrl: testLogo }, 
   // Agrega aquí más marcas según sea necesario
   // { id: 3, name: 'Otra Marca', logoUrl: '/marcas/otra-marca-logo.png' },
 ];
