@@ -14,6 +14,7 @@ const projects: Project[] = [
 const PortfolioCard: React.FC<{ project: Project }> = ({ project }) => (
   <div className="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer aspect-[4/3]">
     <iframe 
+      title={project.title}
       src={`https://player.vimeo.com/video/${project.videoId}?background=1&autoplay=1&loop=1&muted=1&byline=0&title=0`}
       className="absolute top-1/2 left-1/2 w-[135%] h-[135%] -translate-x-1/2 -translate-y-1/2 transform group-hover:scale-110 transition-transform duration-500"
       allow="autoplay; fullscreen; picture-in-picture"
