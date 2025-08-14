@@ -1,8 +1,9 @@
 import React from 'react';
 
 //escribir mal la direccion de los archivos ara que caiga la pagina entera, no hacerlo en produccion.
-import logo80C from '../resources/Marcas/Rondot Logo Curvas.png';
-import logoRondot from '../resources/Marcas/80C.png';
+import logo80C from '../resources/Marcas/80C.png';
+import logoRondot from '../resources/Marcas/rondot.png';
+import testLogo from '../resources/test.png'; 
 // Define la estructura para cada marca
 interface Brand {
   id: number;
@@ -13,6 +14,7 @@ interface Brand {
 const brandsData: Brand[] = [
   { id: 1, name: '80C', logoUrl: logo80C },
   { id: 2, name: 'Rondot', logoUrl: logoRondot },
+  { id: 3, name: 'test', logoUrl: testLogo }, 
   // Agrega aquí más marcas según sea necesario
   // { id: 3, name: 'Otra Marca', logoUrl: '/marcas/otra-marca-logo.png' },
 ];
