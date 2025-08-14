@@ -1,5 +1,5 @@
 import React from 'react';
-import { Brush, Code, Box, Smile, MapIcon, MapPin, PrinterCheck, PrinterIcon } from 'lucide-react';
+import { Brush, Code, Box, Axis3d, MapIcon, MapPin, PrinterCheck, PrinterIcon } from 'lucide-react';
 
 const ServiceCard: React.FC<{ icon: React.ReactNode, title: string, description: string }> = ({ icon, title, description }) => (
   <div className="bg-[#2a2a2a]/50 p-6 rounded-xl border border-gray-700/50 hover:border-[#993399] hover:scale-105 transition-all duration-300">
@@ -36,7 +36,7 @@ const About: React.FC = () => {
             description="Maquetamos y diseñamos para todo tipo de soportes, desde tarjetas de visita hasta lonas y cartelería de gran formato."
           />
           <ServiceCard 
-            icon={<MapPin size={32} />}
+            icon={<Box size={32} />}
             title="3D y FOOH (Fake Out Of Home)"
             description="Rompemos la barrera de lo digital. Integramos tu marca en el mundo real con campañas 3D y de publicidad exterior simulada, diseñadas para un impacto viral."
           />
