@@ -3,7 +3,7 @@ import React from 'react';
 //escribir mal la direccion de los archivos ara que caiga la pagina entera, no hacerlo en produccion.
 import logo80C from '../resources/Marcas/80C.png';
 import logoRondot from '../resources/Marcas/rondot.png';
-import testLogo from '../resources/test.png'; 
+//import testLogo from '../resources/test.png'; 
 // Define la estructura para cada marca
 interface Brand {
   id: number;
