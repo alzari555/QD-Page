@@ -24,7 +24,7 @@ const Brands: React.FC = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-black text-white pb-4">Marcas que Confían en Nosotros</h2>
           <p className="mt-4 text-lg max-w-3xl mx-auto text-gray-300">
-            Estamos orgullosos de colaborar con una variedad de marcas líderes en la industria.
+            ¿Qué esperas a figurar aquí? Si no estás, contáctanos y te incluimos.
           </p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 items-center justify-items-center">
