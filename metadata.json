@@ -1,6 +1,9 @@
 {
   "name": "QD Creative Studio",
   "description": "A portfolio website for QD Creative Studio, showcasing their work in branding, UI/UX design, 3D and illustration.",
+  "email": "qdcreativeqd@gmail.com",
+  "domain": "https://qdagenciacreativa.netlify.app",
+  "instagram": "@qdstudio.ok",
   "requestFramePermissions": [],
   "prompt": ""
 }
