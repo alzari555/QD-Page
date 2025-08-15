@@ -41,7 +41,7 @@ const Brands: React.FC = () => {
               <img 
                 src={brand.logoUrl} 
                 alt={brand.name} 
-                className="max-h-20 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                className="max-h-20 w-auto object-contain filter grayscale hover:scale-110 transition-all duration-300"
               />
             </div>
           ))}
