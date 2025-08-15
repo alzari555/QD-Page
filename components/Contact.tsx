@@ -13,7 +13,7 @@ const Contact: React.FC = () => {
         <p className="mt-6 text-lg max-w-2xl mx-auto text-gray-400">
           Si tienes una idea en mente o buscas un socio creativo para tu próximo gran proyecto, nos encantaría escucharte. Escríbenos y construyamos juntos el futuro de tu marca.
         </p>
-        <a href="mailto:hello@qdstudio.com" className="mt-10 inline-block bg-gradient-to-r from-[#993399] to-[#3645a9] text-white font-bold py-4 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-2xl shadow-[#993399]/30">
+        <a href="mailto:qdcreativeqd@gmail.com" className="mt-10 inline-block bg-gradient-to-r from-[#993399] to-[#3645a9] text-white font-bold py-4 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-2xl shadow-[#993399]/30">
           Contacta con nosotros
         </a>
       </div>
