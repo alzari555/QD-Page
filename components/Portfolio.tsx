@@ -6,7 +6,7 @@ const projects: Project[] = [
   { id: 1, title: 'Samsung Demo', category: 'Animación 3D', videoId: '1101316855' },
   { id: 2, title: 'Hanmma', category: 'Indumentaria de Realidad Aumentada', videoId: '1109868960' },
   { id: 3, title: 'Branca Unico', category: 'Publicorto 3D no oficial', videoId: '1108564412' },
-  { id: 4, title: 'Corhome', category: 'Renders arquitectónicos', videoId: '1119852436' },
+  { id: 4, title: 'Corhome', category: 'Renders arquitectónicos', videoId: '1119866918' },
   { id: 5, title: 'Delta OS', category: 'UX/UI y Branding', videoId: '1108560501' },
   { id: 6, title: 'Rondot', category: 'Diseño Editorial', videoId: '1108549611' },
 ];
