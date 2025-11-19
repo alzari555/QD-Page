@@ -1,8 +1,20 @@
 
 import React from 'react';
 import Logo from './Logo';
+import { Linkedin, Instagram } from 'lucide-react';
 
 const Hero: React.FC = () => {
+  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const targetId = e.currentTarget.getAttribute('data-target');
+    if (targetId) {
+      const targetElement = document.querySelector(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center text-center overflow-hidden bg-[#1d1d1b]">
       <div className="absolute inset-0 bg-gradient-to-br from-[#1d1d1b] via-[#1d1d1b] to-[#993399]/20"></div>
@@ -15,8 +27,16 @@ const Hero: React.FC = () => {
         <p className="mt-6 text-lg md:text-xl max-w-2xl text-gray-300">
           Damos vida a tu marca con identidades visuales de impacto y experiencias digitales que enamoran.
         </p>
-        <a href="#portfolio" className="mt-10 bg-gradient-to-r from-[#993399] to-[#3645a9] text-white font-bold py-4 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-2xl shadow-[#993399]/30">
+        <a data-target="#portfolio" onClick={handleSmoothScroll} className="mt-10 bg-gradient-to-r from-[#993399] to-[#3645a9] text-white font-bold py-4 px-10 rounded-full hover:scale-105 transition-transform duration-300 text-lg shadow-2xl shadow-[#993399]/30 cursor-pointer">
           Conoce nuestros proyectos
+        </a>
+      </div>
+      <div className="absolute bottom-8 left-8 flex space-x-4">
+        <a href="#" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#993399] transition-colors duration-300">
+          <Linkedin size={24} />
+        </a>
+        <a href="https://www.instagram.com/qdstudio.ok/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#993399] transition-colors duration-300">
+          <Instagram size={24} />
         </a>
       </div>
     </section>
